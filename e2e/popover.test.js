@@ -33,8 +33,6 @@ describe('Check popover', () => {
   describe('Check popover', () => {
     test('проверка появления окна', async () => {
       await page.goto(baseUrl);
-      //   const input = await page.$('.input-valid-card');
-      //   await input.type('4716662880185704351');
       const button = await page.$('.button');
       button.click();
       await page.waitForSelector('.popover');
